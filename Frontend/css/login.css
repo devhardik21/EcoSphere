@@ -1,0 +1,148 @@
+/* * Google Font */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('bg.jpg') no-repeat center center/cover;
+    padding: 0 10px;
+    color: white;
+}
+
+/* Login Form Container */
+.login_form {
+    width: 100%;
+    max-width: 530px;
+    background: #333;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    border: 2px solid green;
+}
+
+.login_form:hover {
+    transform: scale(1.1);
+}
+
+/* Input Box Styling */
+.input_box {
+    margin-bottom: 25px;
+}
+
+.input_box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.input_box input, 
+.input_box select {
+    width: 100%;
+    height: 55px;
+    border: 2px solid green;
+    border-radius: 8px;
+    outline: none;
+    background: #444;
+    font-size: 16px;
+    padding: 0px 18px;
+    transition: 0.3s ease;
+    color: white;
+}
+
+/* .input_box input:focus, 
+.input_box select:focus {
+    border-color: yellow;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.6);
+} */
+
+/* Password and Forgot Password Styling */
+.password_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password_title a {
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.password_title a:hover {
+    color: yellow;
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    height: 50px;
+    background: greenyellow;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(173, 255, 47, 0.3);
+}
+
+button:hover {
+    background: darkgreen;
+    color: white;
+    box-shadow: 0 8px 20px rgba(173, 255, 47, 0.5);
+}
+
+/* Sign Up Link */
+.sign_up {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.sign_up a {
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.sign_up a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login_form {
+        padding: 30px 20px;
+    }
+    
+    .input_box input {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    button {
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}

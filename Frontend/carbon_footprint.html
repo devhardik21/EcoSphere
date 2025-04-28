@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/carbon_footprint.css">
+    <title>Carbon Footprint Calculator</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1> Carbon Calculator</h1>
+        <form id="my_form">
+            <div class="details" id="time">
+                <label for="me">Enter your date</label>
+                <input type="date" id="me">
+            </div>
+            <div class="details" id="transport-id">
+                <h2>Transportation</h2>
+                <div class="inside-content">
+                    <label for="DISTANCE" name="distance">Distance</label>
+                    <input type="text" id="DISTANCE">
+                </div>
+                <div class="inside-content">
+                    <label for="TRAVEL_TYPE" name="travel_type">Mode of Transportation</label>
+                    <select name="transport-opt" id="TRAVEL_TYPE">
+                        <option value="car">Car</option>
+                        <option value="bus">Bus</option>
+                        <option value="bike">Bike</option>
+                        <option value="electric">Electric Vehicles</option>
+                    </select>
+                </div>
+                <div class="inside-content">
+                    <label for="FUEL_TYPE" id="fuel_type">Fuel Label</label>
+                    <select name="fuel-opt" id="FUEL_TYPE">
+                        <option value="petrol">petrol</option>
+                        <option value="diesel"> diesel</option>
+                        <option value="electric Vehicle">Electric</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="details" id="energy-id">
+                <div class="inside-content">
+                    <h2> Based on Energy Consumption</h2>
+                    <label for="electricity">Energy consumption(in kWh) </label>
+                    <input type="number" id="electricity">
+                </div>
+                <div class="inside-content">
+                    <label for="gas">Gas Usage</label>
+                    <input id="gas" type="number">
+                </div>
+            </div>
+            <div class="details" id="food-id">
+                <h2>Based on food diet</h2>
+                <div class="inside-content">
+                    <label for="food">Diet Type</label>
+                    <select name="diet_dec" id="food">
+                        <option value="veg">Veg</option>
+                        <option value="non-veg">Non-Veg</option>
+                    </select>
+                </div>
+            </div>
+            <div class="details" id="waste-id">
+                <div class="inside-content">
+                    <h2>Based on waste generated</h2>
+                    <label for="waste">Based on Waste</label>
+                    <select id="waste" name="waste-opt">
+                        <option value="organic">Organic</option>
+                        <option value="glass">Glass</option>
+                        <option value="plastic">Plastic</option>
+                    </select>
+                </div>
+            </div>
+                <div class="details" id="water-id">
+                    <div class="inside-content">
+                        <h2>Based on Water Consumed</h2>
+                        <label for="water">Water(in lit)</label>
+                        <input type="number" id="water">
+                    </div>
+                </div>
+                <button type="submit" id="sub_button">Calculate Carbon Footprint</button>
+        </form>
+     <div class="result-section"></div>
+    </div>
+
+<script src="./js/carbon_footprint.js"></script>
+</body>
+
+</html>
